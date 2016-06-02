@@ -1,10 +1,4 @@
-//
-//  AppDelegate.swift
-//  CompareApp
-//
-//  Created by 曾偉亮 on 2016/6/2.
-//  Copyright © 2016年 TSENG. All rights reserved.
-//
+
 
 import UIKit
 
@@ -12,10 +6,16 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var mainVC:ViewController?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        mainVC = ViewController()
+        mainVC?.refreash(window!.frame)
+        window?.rootViewController = mainVC
+        window?.makeKeyAndVisible()
+
         return true
     }
 

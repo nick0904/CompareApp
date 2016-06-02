@@ -12,6 +12,10 @@
 		D194A7FD1D000CC000A3D8DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D194A7FB1D000CC000A3D8DA /* Main.storyboard */; };
 		D194A7FF1D000CC000A3D8DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D194A7FE1D000CC000A3D8DA /* Assets.xcassets */; };
 		D194A8021D000CC000A3D8DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D194A8001D000CC000A3D8DA /* LaunchScreen.storyboard */; };
+		D194A80B1D000D3200A3D8DA /* CompareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D194A8091D000D3200A3D8DA /* CompareViewController.swift */; };
+		D194A80C1D000D3200A3D8DA /* CompareImageViewTouchEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D194A80A1D000D3200A3D8DA /* CompareImageViewTouchEvent.swift */; };
+		D194A80F1D000D3B00A3D8DA /* LotteryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D194A80D1D000D3B00A3D8DA /* LotteryViewController.swift */; };
+		D194A8101D000D3B00A3D8DA /* CGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D194A80E1D000D3B00A3D8DA /* CGView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		D194A7FE1D000CC000A3D8DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D194A8011D000CC000A3D8DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D194A8031D000CC000A3D8DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D194A8091D000D3200A3D8DA /* CompareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompareViewController.swift; sourceTree = "<group>"; };
+		D194A80A1D000D3200A3D8DA /* CompareImageViewTouchEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompareImageViewTouchEvent.swift; sourceTree = "<group>"; };
+		D194A80D1D000D3B00A3D8DA /* LotteryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotteryViewController.swift; sourceTree = "<group>"; };
+		D194A80E1D000D3B00A3D8DA /* CGView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +64,32 @@
 			children = (
 				D194A7F71D000CC000A3D8DA /* AppDelegate.swift */,
 				D194A7F91D000CC000A3D8DA /* ViewController.swift */,
+				D194A8111D000D4A00A3D8DA /* porker */,
+				D194A8121D000D5500A3D8DA /* lottery */,
 				D194A7FB1D000CC000A3D8DA /* Main.storyboard */,
 				D194A7FE1D000CC000A3D8DA /* Assets.xcassets */,
 				D194A8001D000CC000A3D8DA /* LaunchScreen.storyboard */,
 				D194A8031D000CC000A3D8DA /* Info.plist */,
 			);
 			path = CompareApp;
+			sourceTree = "<group>";
+		};
+		D194A8111D000D4A00A3D8DA /* porker */ = {
+			isa = PBXGroup;
+			children = (
+				D194A8091D000D3200A3D8DA /* CompareViewController.swift */,
+				D194A80A1D000D3200A3D8DA /* CompareImageViewTouchEvent.swift */,
+			);
+			name = porker;
+			sourceTree = "<group>";
+		};
+		D194A8121D000D5500A3D8DA /* lottery */ = {
+			isa = PBXGroup;
+			children = (
+				D194A80D1D000D3B00A3D8DA /* LotteryViewController.swift */,
+				D194A80E1D000D3B00A3D8DA /* CGView.swift */,
+			);
+			name = lottery;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +163,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D194A8101D000D3B00A3D8DA /* CGView.swift in Sources */,
+				D194A80B1D000D3200A3D8DA /* CompareViewController.swift in Sources */,
 				D194A7FA1D000CC000A3D8DA /* ViewController.swift in Sources */,
+				D194A80C1D000D3200A3D8DA /* CompareImageViewTouchEvent.swift in Sources */,
 				D194A7F81D000CC000A3D8DA /* AppDelegate.swift in Sources */,
+				D194A80F1D000D3B00A3D8DA /* LotteryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
